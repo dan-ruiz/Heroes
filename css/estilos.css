@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+/* Header */
+
+.desc-top {
+    background-color: #1CD1B0;
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.heroes-top {
+    background-color: #00669F;
+    padding: 20px 30px;
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+/* Main */
+
+main {
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+.container {
+    position: relative;
+    width: 350px;
+    display: inline-block;
+    background-color: #F3F3F3;
+    padding-bottom: 200px;
+    margin-right: 30px;
+} 
+
+.titulo {
+    padding: -60px;
+}
+
+.cora {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.img-perfil{
+    border-radius: 60px;
+    position: relative;
+    top: -60px;
+}
+
+.background-batman {
+    background-image: url('../img/fondo-batman.png');
+    background-size: cover;
+    height: 200px;
+}
+
+.background-harley {
+    background-image: url('../img/fondo-harley.png');
+    background-size: cover;
+    height: 200px;
+}
+
+.container-description {
+    padding: 30px 20px 70px 20px;
+}
+
+.boton {
+    background-color: #00669F;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 125px;
+    bottom: 100px;
+}
+
+/* Footer */
+
+.derechos {
+    background-color: #00669F;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+}
