@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -27,22 +28,74 @@
 /* Main */
 
 main {
-    padding: 100px 0;
-    text-align: center;
+    margin: 100px 10px;
+    display: flex;
+    justify-content: center;
 }
 
-
-.container {
-    position: relative;
-    width: 350px;
-    display: inline-block;
+.cards {
     background-color: #F3F3F3;
-    padding-bottom: 200px;
-    margin-right: 30px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+    width: 25%;
 } 
 
+.card-batman {
+    order: -2;
+}
+
+.card-harley{
+    order: -1;
+}
+
+.card-mujerm {
+    display: none;
+}
+
+.background-batman {
+    background-image: url('../img/fondo-batman.png');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.background-mujerm {
+    background-image: url('../img/bg-maravilla.png');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.background-superman {
+    background-image: url('../img/bg-superman.png');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.background-harley {
+    background-image: url('../img/fondo-harley.png');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-card {
+    padding: 60px 20px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .titulo {
-    padding: -60px;
+    text-transform: uppercase;
 }
 
 .cora {
@@ -52,34 +105,34 @@ main {
 }
 
 .img-perfil{
-    border-radius: 60px;
-    position: relative;
-    top: -60px;
-}
-
-.background-batman {
-    background-image: url('../img/fondo-batman.png');
-    background-size: cover;
-    height: 200px;
-}
-
-.background-harley {
-    background-image: url('../img/fondo-harley.png');
-    background-size: cover;
-    height: 200px;
+    border-radius: 55px;
+    position: absolute;
+    top: 220px;
+    height: 120px;
 }
 
 .container-description {
-    padding: 30px 20px 70px 20px;
+    padding: 40px 0;
 }
 
 .boton {
+    display: flex;
+    justify-content: center;
+}
+
+.boton > button {
     background-color: #00669F;
     padding: 10px 20px;
     color: #FFFFFF;
+    border-radius: 5px;
     position: absolute;
-    left: 125px;
-    bottom: 100px;
+    bottom: 20px;
+}
+
+.icon {
+    color: #00669F;
+    font-size: xx-large;
+    display: none;
 }
 
 /* Footer */
@@ -90,4 +143,63 @@ main {
     text-align: center;
     color: #FFFFFF;
     padding: 10px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:768px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 30px 10px;
+    }
+
+    .cards {
+        flex-basis: 45%;
+        margin-bottom: 30px;
+    }
+
+    .card-mujerm {
+        display: flex;
+    }
+
+    .card-harley {
+        order: 0;
+    }
+
+    .container-description {
+        padding: 10px 0
+    }
+    
+    .boton {
+        padding-top: 30px;
+    }
+
+    .icon {
+        display: flex;
+        bottom: 5px;
+        right: 30px;
+        position: fixed;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .cards {
+        flex-grow: 1;
+        height: 77vh;
+    }
+
+    .card-mujerm {
+        display: flex;
+    }
+
+    .card-harley {
+        display: none;
+    }
+
+    .icon {
+        bottom: 15px;
+    }
 }
