@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilosForm.css" />
+    <title>Formulario</title>
+  </head>
+  
+  <body>
+    <header>
+      <p class="desc-top">Descuentos 20%</p>
+    </header>
+    <div class="heroes-top">
+      <img src="img/logo.png" alt="logo" />
+      <h1>Nombre Tienda</h1>
+    </div>
+    <nav>
+      <ul>
+          <a href="">
+              <li>Contacto</li>
+          </a>
+          <a href="">
+              <li>Registrarme</li>
+          </a>
+          <a href="">
+              <li>Ingresar</li>
+          </a>
+      </ul>
+    </nav>
+    
+    <main>
+      <section class="formulario">
+        <div class="titulo-form">
+          <h2>Añade tu Super!</h2>
+          <p>Agregá tu personaje favorito completando las opciones.</p>
+        </div>
+        <form action="form.html" class="form">
+          <div class="form-left">
+            <!-- Nombre -->
+            <div class="title-left">
+              <label for="nombre">*Nombre</label>
+              <input type="text" name="nombre" id="nombre" required>
+            </div>
+
+            <!-- Fecha -->
+            <div class="title-left">
+              <label for="fecha">Fecha</label>
+              <input type="date" name="fecha" id="fecha">
+            </div>
+
+            <!-- Descripcion -->
+            <div class="title-left">
+              <label for="descripcion"></label>
+              <textarea name="descripcion" id="descripcion" cols="30" rows="14" placeholder="Descripción"></textarea>
+            </div>
+          </div>
+
+          <div class="form-rigth">
+            <!-- Especie -->
+            <div class="title-right">
+              <label for="especie">*Especie</label>
+              <select name="Especie" id="especie">
+                <option value="Batman">Batman</option>
+                <option value="Harley-Queen">Harley Queen</option>
+                <option value="Superman">Superman</option>
+                <option value="Mujer-Maravilla">Mujer Maravilla</option>
+              </select>
+            </div>
+
+            <!-- Archivos -->
+            <div class="title-right">
+              <label for="archivos">Agregar Foto</label>
+              <input type="file" name="archivos" id="archivos">
+            </div>
+
+            <!-- Poderes -->
+            <div class="title-right">
+              <p>Poderes</p>
+              <label for="volar">
+                <input type="checkbox" name="Poderes" id="volar" value="volar">
+                Volar
+              </label>
+              <label for="superInteligencia">
+                <input type="checkbox" name="Poderes" id="superInteligencia" value="superInteligencia">
+                SuperInteligencia
+              </label>
+              <label for="vistaLaser">
+                <input type="checkbox" name="Poderes" id="vistaLaser" value="vistaLaser">
+                Vista de rayo láser
+              </label>
+              <label for="billeteraGorda">
+                <input type="checkbox" name="Poderes" id="billeteraGorda" value="billeteraGorda">
+                Billetera gorda
+              </label>
+            </div>
+
+            <hr>
+            <!-- Personaje -->
+            <div class="title-right">
+              <p>Tipo de Personaje</p>
+              <label for="personaje">
+                <input type="radio" name="personaje" id="personaje" value="heroeHeroina">
+                Héroe / Heroina
+              </label>
+
+              <label for="personaje">
+                <input type="radio" name="personaje" id="personaje" value="villanoVillana">
+                Villano / Villana
+              </label>
+            </div>
+          </div>
+        </form>
+        <div class="boton">
+          <button type="submit">Añadir</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="derechos">&copy; Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+  </body>
+</html>

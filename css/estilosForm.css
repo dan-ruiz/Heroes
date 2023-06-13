@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.desc-top {
+  background-color: #1CD1B0;
+  padding: 10px 30px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.heroes-top {
+  display:flex;
+  align-items: center;
+  background-color: #00669F;
+  color: #FFFFFF;
+  padding: 20px 30px;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+nav {
+  background-color: #001D2D;                                                                                  
+  padding: 15px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+nav > ul > a {
+  list-style: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 8px;
+}
+
+/* Main */
+
+main {
+  margin: 100px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 { 
+  padding-bottom: 10px;
+} 
+
+label {
+  padding-bottom: 10px;
+}
+
+.formulario {
+  background-color: #00669F;
+  padding: 20px 60px;
+  color: #FFFFFF;
+  border-radius: 40px;
+}
+
+.titulo-form {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  padding: 20px 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.form-left, .form-right {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.title-left, .title-right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.title-right > p {
+  padding-bottom: 10px;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #1CD1B0;
+  padding: 10px 100px;
+  border-style: none;
+  border-radius: 15px;
+}
+
+textarea {
+  border-radius: 20px;
+  padding-top: 15px;
+  resize: none;
+}
+
+input {
+  padding: 10px 0;
+  border-radius: 10px;
+  border-style: none;
+}
+
+select {
+  padding: 9px 0;
+  border-radius: 10px;
+  border-style: none;
+}
+
+/* Footer */
+
+.derechos {
+  background-color: #00669F;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px;
+}
